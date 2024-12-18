@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main() {
+int n,temp=0,rem,sum=0;
+printf("enter n value:");
+scanf("%d",&n);
+temp=n;
+while(n>0){
+    rem=n%10;
+    sum+=rem*rem*rem;
+    n=n/10;
+}
+if(temp==sum){
+    printf("The Given number is Amstrong no.!");
+}
+else{
+printf("it is not a Amstrong no.!");
+}
+}
