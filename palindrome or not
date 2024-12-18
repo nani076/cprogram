@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main() {
+int n,temp=0,rem,rev=0;
+printf("enter n value:");
+scanf("%d",&n);
+temp=n;
+while(n>0){
+    rem=n%10;
+    rev=rev*10+rem;
+    n=n/10;
+}
+if(temp==rev){
+    printf("The Given number is Palindrome !");
+}
+else{
+printf("it is not a Palindrome !");
+
+}
+}
